@@ -5,10 +5,149 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bai tap</title>
+    <title>Document</title>
+    <i class="fa fa-sign-in" aria-hidden="true"></i>
+
+    <style>
+        #wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        #container {
+            display: flex;
+            justify-content: space-between;
+            width: 1440px;
+        }
+        
+        #center {
+            width: 910px;
+            background-color: white;
+            display: inline-block;
+        }
+        
+        #right {
+            width: 440px;
+            background-color: aqua;
+        }
+        
+        #left {
+            width: 90px;
+            height: 870px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: solid 0.5px rgb(136, 126, 126);
+        }
+        
+        #left_above {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        #below {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .item {
+            width: 32px;
+            margin-top: 50px;
+        }
+        
+        #setting {
+            margin-top: 36px;
+        }
+        
+        #internal_button {
+            background-color: rgb(214, 52, 114);
+            color: white;
+            border-radius: 18px;
+            border: none;
+            padding: 8px 20px;
+            display: inline-block;
+            font-size: 15px;
+        }
+        
+        #title h2,
+        button {
+            display: inline-block;
+            margin-bottom: 45px;
+        }
+        
+        #time {
+            justify-content: space-around;
+            margin-left: 20px;
+        }
+        
+        #button_left {
+            border-radius: 18px;
+            border-color: red;
+            padding: 7px 10px;
+            margin-left: 650px;
+            border-width: 1px;
+            color: red;
+        }
+        
+        #banner {
+            margin-left: 10px;
+        }
+    </style>
 </head>
 
 <body>
+    <div id="wrapper">
+        <div id="container">
+            <div id="left">
+                <div id="left_above">
+                    <img class="item" src="photos/logo.png" alt="">
+                    <img class="item" src="photos/home.png" alt="">
+                    <img class="item" src="photos/chatting.png" alt="">
+                    <img class="item" src="photos/calender.png" alt="">
+                    <img class="item" src="photos/cam.png" alt="">
+
+                    <img class="item" src="photos/user.png" alt="">
+                </div>
+
+                <div id="below">
+                    <img src="photos/avatar.png" width="44" alt="">
+                    <img id="setting" src="photos/setting.png" width="44" alt="">
+                </div>
+            </div>
+            <div id="center">
+                <div id="title">
+                    <h2>Metting title</h2>
+                    <button id="button_left">
+                    <img src="" alt="">
+                    &#128308;
+                    12:00
+                </button>
+                </div>
+                <div id="time">
+                    <button id="internal_button">
+                        <img src="photos/user.png" alt="">
+                        Internal</button>
+                    <time>
+                        <img src="photos/calender_small.png" alt="">
+                        Sep 02, 2022 &verbar; 08:00 - 09:00 AM
+                    </time>
+
+                </div>
+                <div>
+                    <img id="banner" src="photos/img_big.png" alt="">
+                </div>
+
+            </div>
+            <div id="right">right</div>
+
+        </div>
+
+
+    </div>
 
 </body>
 
